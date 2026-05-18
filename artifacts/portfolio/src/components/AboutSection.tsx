@@ -1,7 +1,31 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import { SiFigma } from "react-icons/si";
+import profileImg from "@assets/pp2_1779125927260.png";
 
-const SKILLS = ["Adobe Photoshop", "Adobe Illustrator", "Figma"];
+function PhotoshopIcon() {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <rect width="32" height="32" rx="6" fill="#001E36"/>
+      <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="#31A8FF" fontSize="13" fontWeight="bold" fontFamily="Arial, sans-serif">Ps</text>
+    </svg>
+  );
+}
+
+function IllustratorIcon() {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <rect width="32" height="32" rx="6" fill="#310000"/>
+      <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="#FF9A00" fontSize="13" fontWeight="bold" fontFamily="Arial, sans-serif">Ai</text>
+    </svg>
+  );
+}
+
+const SKILLS = [
+  { name: "Adobe Photoshop", icon: <PhotoshopIcon />, color: "#31A8FF" },
+  { name: "Adobe Illustrator", icon: <IllustratorIcon />, color: "#FF9A00" },
+  { name: "Figma", icon: <SiFigma className="text-[#F24E1E]" size={32} />, color: "#F24E1E" },
+];
 const LANGUAGES = ["English — Fluent", "Nepali — Fluent"];
 const INTERESTS = ["Design", "Art & Craft", "Music", "Gaming", "Creative Thinking"];
 
@@ -22,6 +46,24 @@ export default function AboutSection() {
             >
               ABOUT ME
             </motion.h2>
+
+            {/* Profile Photo */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+              className="relative mb-8 w-48 h-48"
+            >
+              <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl scale-110" />
+              <img
+                src={profileImg}
+                alt="Santosh Gurung"
+                className="relative w-48 h-48 rounded-full object-cover object-top border-2 border-primary/30"
+                data-testid="img-profile"
+              />
+            </motion.div>
+
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -54,12 +96,15 @@ export default function AboutSection() {
             >
               <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none h-full group">
                 <CardContent className="p-8">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-xl mb-4 group-hover:text-primary transition-colors">TECHNICAL SKILLS</h3>
-                  <ul className="space-y-2">
+                  <h3 className="text-[#8b5cf6] font-display font-bold text-xl mb-6 group-hover:text-primary transition-colors">TECHNICAL SKILLS</h3>
+                  <div className="flex flex-col gap-4">
                     {SKILLS.map(skill => (
-                      <li key={skill} className="text-white/80">{skill}</li>
+                      <div key={skill.name} className="flex items-center gap-3">
+                        <span style={{ color: skill.color }}>{skill.icon}</span>
+                        <span className="text-white/80 text-sm font-medium">{skill.name}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
