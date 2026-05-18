@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { SiFigma } from "react-icons/si";
-import profileImg from "@assets/pp2_1779125927260.png";
+import profileImg from "@assets/pp2_1779129995448.png";
 
 function PhotoshopIcon() {
   return (
@@ -53,15 +53,20 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="relative mb-8 w-48 h-48"
+              className="flex flex-col items-center mb-8"
             >
-              <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl scale-110" />
-              <img
-                src={profileImg}
-                alt="Santosh Gurung"
-                className="relative w-48 h-48 rounded-full object-cover object-top border-2 border-primary/30"
-                data-testid="img-profile"
-              />
+              <div className="relative w-48 h-48">
+                <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl scale-110" />
+                <img
+                  src={profileImg}
+                  alt="Santosh Gurung"
+                  className="relative w-48 h-48 rounded-full object-cover object-top border-2 border-primary/30"
+                  data-testid="img-profile"
+                />
+              </div>
+              <h3 className="font-display font-bold text-2xl text-white tracking-widest uppercase mt-4">
+                Santosh Gurung
+              </h3>
             </motion.div>
 
             <motion.div 
