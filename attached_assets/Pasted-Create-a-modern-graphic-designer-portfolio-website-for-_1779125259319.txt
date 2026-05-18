@@ -1,0 +1,142 @@
+Create a modern graphic designer portfolio website for “Santosh Gurung” with a bold minimalist aesthetic inspired by the uploaded landing page design.
+
+STYLE & THEME:
+- Exact same visual vibe as the reference landing page
+- Black and white theme with neon green glow accents
+- Clean futuristic layout
+- Oversized bold typography
+- Minimal but premium look
+- Soft gradient blur effects in neon green
+- Smooth scrolling animations
+- Dark mode sections with subtle glow
+- Modern portfolio style similar to high-end creative agencies
+- Use large spacing and clean composition
+- Make everything look premium and highly visual
+
+FONT STYLE:
+- Bold modern sans-serif typography
+- Large hero text
+- Thin minimal paragraph text
+- Strong visual hierarchy
+
+LANDING PAGE / HERO SECTION:
+- Fullscreen hero section
+- Huge typography in background saying:
+  “SANTOSH”
+  “GRG”
+- Center portrait image exactly like the reference
+- Add glowing green blurred effects around image
+- Small introduction text on left side:
+  “Every project starts with an idea and ends with something worth showing. Clean design, sharp concepts, and visuals that do the talking.”
+- Add CTA buttons:
+  [View Portfolio]
+  [Contact Me]
+- Add smooth mouse parallax and hover effects
+
+NAVBAR:
+- Minimal transparent navbar
+- Logo text: “SG.”
+- Navigation links:
+  Home
+  About
+  Logo Folio
+  Brand Identity
+  Thumbnails
+  Posters
+  Contact
+
+ABOUT ME SECTION:
+Use this exact content:
+
+TITLE:
+ABOUT ME
+
+TEXT:
+I’m a Nepali designer from Kathmandu city, specialized in graphic design. My passion lies in crafting and enhancing projects that stand out with a distinctive style, ensuring they convey the right message with a genuine and unique personality. Inspired by the stars, I believe in limitless creativity, where every idea has the potential to shine and leave a lasting impact.
+
+Add:
+“1+ year of freelancing experience on Fiverr working with clients worldwide.”
+
+TECHNICAL SKILLS:
+- Adobe Photoshop
+- Adobe Illustrator
+- Figma
+
+LANGUAGES:
+- English — Fluent
+- Nepali — Fluent
+
+INTERESTS:
+- Design
+- Art & Craft
+- Music
+- Gaming
+- Creative Thinking
+
+EDUCATION:
+2024 +2 in Computer Science
+Kathmandu Institute of Science & Technology
+
+ABOUT SECTION DESIGN:
+- Dark section background
+- Purple-blue accent headings like the reference
+- Large left aligned typography
+- Modern cards for skills
+- Animated hover glow effects
+
+PORTFOLIO SECTIONS:
+
+1. LOGO FOLIO
+- Modern logo showcase grid
+- Masonry layout
+- Hover zoom effect
+- Black background with subtle green glow
+
+2. BRAND IDENTITY
+- Premium case study layout
+- Mockup showcase sections
+- Large typography and spacing
+- Include branding presentations
+
+3. YOUTUBE THUMBNAILS
+- Thumbnail gallery
+- Hover animation
+- Clean grid layout
+- Modern creator-style presentation
+
+4. SOCIAL MEDIA POSTERS
+- Instagram/social media designs showcase
+- Responsive Pinterest-style grid
+- Smooth hover effects
+
+CONTACT SECTION:
+- Minimal contact form
+- Social links
+- Fiverr link
+- Email
+- Instagram
+- Behance
+
+FOOTER:
+- Minimal futuristic footer
+- “Designed by Santosh Gurung”
+- Soft green gradient glow
+
+ANIMATIONS:
+- Smooth scrolling
+- Fade-up animations
+- Hover transitions
+- Glow pulse effects
+- Modern premium interactions
+
+RESPONSIVE:
+- Fully responsive for mobile, tablet, desktop
+- Mobile hero section should remain visually strong
+- Optimize typography scaling
+
+IMPORTANT:
+- Maintain the exact same aesthetic as the uploaded reference
+- Prioritize visual design over heavy text
+- Make it feel like a premium creative designer portfolio
+- Use placeholder portfolio images that can later be replaced easily
+- Keep the entire website highly modern and visually clean
