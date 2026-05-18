@@ -1,10 +1,20 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import logo1 from "@assets/image_1779126550877.png";
+import logo2 from "@assets/image_1779126557683.png";
+import logo3 from "@assets/image_1779126564503.png";
+import logo4 from "@assets/image_1779126571483.png";
+import logo5 from "@assets/image_1779126576518.png";
+import logo6 from "@assets/image_1779126584369.png";
 
-const LOGOS = Array.from({ length: 8 }).map((_, i) => ({
-  id: i + 1,
-  title: `Brand Logo #${i + 1}`
-}));
+const LOGOS = [
+  { id: 1, src: logo1, title: "Logo Design 1" },
+  { id: 2, src: logo2, title: "Logo Design 2" },
+  { id: 3, src: logo3, title: "Logo Design 3" },
+  { id: 4, src: logo4, title: "Logo Design 4" },
+  { id: 5, src: logo5, title: "Logo Design 5" },
+  { id: 6, src: logo6, title: "Logo Design 6" },
+];
 
 export default function LogoFolioSection() {
   return (
@@ -25,7 +35,7 @@ export default function LogoFolioSection() {
           <div className="w-24 h-1 bg-primary mt-6" />
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {LOGOS.map((logo, index) => (
             <motion.div
               key={logo.id}
@@ -36,13 +46,12 @@ export default function LogoFolioSection() {
             >
               <Card className="bg-[#111] border-white/5 overflow-hidden group cursor-pointer rounded-none h-full aspect-square relative hover:border-primary/50 transition-all duration-500">
                 <CardContent className="p-0 h-full w-full flex items-center justify-center relative">
-                  {/* Subtle inner glow */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/0 via-transparent to-primary/0 group-hover:from-primary/10 group-hover:to-transparent transition-all duration-500" />
-                  
-                  {/* Placeholder text */}
-                  <span className="text-white/30 font-display font-bold text-xl group-hover:text-primary transition-colors duration-300 group-hover:scale-110 transform">
-                    {logo.title}
-                  </span>
+                  <img
+                    src={logo.src}
+                    alt={logo.title}
+                    className="w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105"
+                  />
                 </CardContent>
               </Card>
             </motion.div>
