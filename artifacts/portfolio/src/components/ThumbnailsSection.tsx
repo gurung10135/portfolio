@@ -29,7 +29,7 @@ export default function ThumbnailsSection() {
           <div className="w-24 h-1 bg-primary mt-6" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {THUMBNAILS.map((thumb, index) => (
             <motion.div
               key={thumb.id}
