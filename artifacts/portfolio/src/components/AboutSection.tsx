@@ -36,7 +36,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-24">
           
           {/* Left / Heading area */}
-          <div className="lg:col-span-5 flex flex-col items-center text-center">
+          <div className="lg:col-span-5 flex flex-col items-start text-left">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
