@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
-const THUMBNAILS = Array.from({ length: 6 }).map((_, i) => ({
+const THUMBNAILS = Array.from({ length: 4 }).map((_, i) => ({
   id: i + 1,
   title: `Thumbnail #${i + 1}`
 }));

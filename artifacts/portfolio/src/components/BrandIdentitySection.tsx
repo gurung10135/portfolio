@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 
 const PROJECTS = [
-  { id: 1, title: "NEXUS Tech", category: "Brand Identity" },
-  { id: 2, title: "AURA Coffee", category: "Packaging & Identity" },
-  { id: 3, title: "ELEVATE Gym", category: "Visual Identity" },
-  { id: 4, title: "ZENITH Studio", category: "Brand Guidelines" }
+  { id: 1, title: "Sushi House", category: "Brand Identity" },
+  { id: 2, title: "Flydeal", category: "Brand Identity" },
 ];
 
 export default function BrandIdentitySection() {
