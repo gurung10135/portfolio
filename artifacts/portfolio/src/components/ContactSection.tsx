@@ -30,17 +30,17 @@ export default function ContactSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-col gap-6"
         >
-          <a href="mailto:santoshdesigns@example.com" className="flex items-center gap-4 text-white/80 hover:text-primary transition-colors group w-fit">
+          <a href="mailto:santosh.grg009870@gmail.com" className="flex items-center gap-4 text-white/80 hover:text-primary transition-colors group w-fit">
             <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-primary transition-colors">
               <Mail className="w-5 h-5" />
             </div>
-            <span className="font-medium text-lg">santoshdesigns@example.com</span>
+            <span className="font-medium text-lg">santosh.grg009870@gmail.com</span>
           </a>
           <div className="flex gap-4 mt-4">
             <a href="#" className="w-12 h-12 rounded-full bg-white/5 hover:bg-primary hover:text-black transition-colors flex items-center justify-center text-white" aria-label="Fiverr">
               <SiFiverr className="w-5 h-5" />
             </a>
-            <a href="#" className="w-12 h-12 rounded-full bg-white/5 hover:bg-primary hover:text-black transition-colors flex items-center justify-center text-white" aria-label="Instagram">
+            <a href="https://www.instagram.com/santosh___grg/#" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 hover:bg-primary hover:text-black transition-colors flex items-center justify-center text-white" aria-label="Instagram">
               <SiInstagram className="w-5 h-5" />
             </a>
             <a href="#" className="w-12 h-12 rounded-full bg-white/5 hover:bg-primary hover:text-black transition-colors flex items-center justify-center text-white" aria-label="Behance">
