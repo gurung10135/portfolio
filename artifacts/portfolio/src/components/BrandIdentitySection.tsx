@@ -50,11 +50,11 @@ export default function BrandIdentitySection() {
               className={`flex flex-col gap-8 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}
             >
               {/* Image */}
-              <div className="w-full md:w-2/3 aspect-[16/9] bg-[#111] border border-white/5 relative group overflow-hidden">
+              <div className="w-full md:w-2/3 bg-[#111] border border-white/5 relative group overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-auto block transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
 
