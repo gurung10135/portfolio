@@ -91,7 +91,7 @@ export default function AboutSection() {
           </div>
 
           {/* Right / Details area */}
-          <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6 lg:pl-32">
+          <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6 lg:pl-48">
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
