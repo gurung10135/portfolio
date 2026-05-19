@@ -91,86 +91,54 @@ export default function AboutSection() {
           </div>
 
           {/* Right / Details area */}
-          <div className="lg:col-span-7 grid grid-cols-2 gap-4 lg:pl-48 justify-items-start">
-
+          <div className="lg:col-span-7 lg:pl-16" style={{ display: 'flex', alignItems: 'flex-start' }}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="w-[340px] h-[340px]"
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '280px 280px',
+                gap: '16px',
+              }}
             >
-              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
-                <CardContent className="p-7 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-5 group-hover:text-primary transition-colors shrink-0">TECHNICAL SKILLS</h3>
-                  <div className="flex flex-col gap-3">
-                    {SKILLS.map(skill => (
-                      <div key={skill.name} className="flex items-center gap-3">
-                        <span style={{ color: skill.color }}>{skill.icon}</span>
-                        <span className="text-white/80 text-sm font-medium">{skill.name}</span>
-                      </div>
-                    ))}
+              {/* Technical Skills */}
+              <div style={{ width: 280, height: 280, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: 24, overflow: 'hidden', boxSizing: 'border-box' }}>
+                <p style={{ color: '#8b5cf6', fontWeight: 700, fontSize: 15, marginBottom: 20, textTransform: 'uppercase', letterSpacing: 1 }}>Technical Skills</p>
+                {SKILLS.map(skill => (
+                  <div key={skill.name} style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+                    <span style={{ color: skill.color, flexShrink: 0 }}>{skill.icon}</span>
+                    <span style={{ color: 'rgba(255,255,255,0.8)', fontSize: 14 }}>{skill.name}</span>
                   </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+                ))}
+              </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="w-[340px] h-[340px]"
-            >
-              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors shrink-0">LANGUAGES</h3>
-                  <ul className="space-y-2">
-                    {LANGUAGES.map(lang => (
-                      <li key={lang} className="text-white/80">{lang}</li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </motion.div>
+              {/* Languages */}
+              <div style={{ width: 280, height: 280, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: 24, overflow: 'hidden', boxSizing: 'border-box' }}>
+                <p style={{ color: '#8b5cf6', fontWeight: 700, fontSize: 15, marginBottom: 20, textTransform: 'uppercase', letterSpacing: 1 }}>Languages</p>
+                {LANGUAGES.map(lang => (
+                  <p key={lang} style={{ color: 'rgba(255,255,255,0.8)', fontSize: 14, marginBottom: 10 }}>{lang}</p>
+                ))}
+              </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="w-[340px] h-[340px]"
-            >
-              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors shrink-0">INTERESTS</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {INTERESTS.map(interest => (
-                      <span key={interest} className="text-sm bg-white/10 px-3 py-1 text-white/80 rounded-full">
-                        {interest}
-                      </span>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+              {/* Interests */}
+              <div style={{ width: 280, height: 280, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: 24, overflow: 'hidden', boxSizing: 'border-box' }}>
+                <p style={{ color: '#8b5cf6', fontWeight: 700, fontSize: 15, marginBottom: 20, textTransform: 'uppercase', letterSpacing: 1 }}>Interests</p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                  {INTERESTS.map(interest => (
+                    <span key={interest} style={{ background: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.8)', fontSize: 13, padding: '4px 12px', borderRadius: 999 }}>{interest}</span>
+                  ))}
+                </div>
+              </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="w-[340px] h-[340px]"
-            >
-              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors shrink-0">EDUCATION</h3>
-                  <p className="text-white/80 font-medium">2024 +2 in Computer Science</p>
-                  <p className="text-white/60 text-sm mt-1">Kathmandu Institute of Science & Technology</p>
-                </CardContent>
-              </Card>
+              {/* Education */}
+              <div style={{ width: 280, height: 280, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: 24, overflow: 'hidden', boxSizing: 'border-box' }}>
+                <p style={{ color: '#8b5cf6', fontWeight: 700, fontSize: 15, marginBottom: 20, textTransform: 'uppercase', letterSpacing: 1 }}>Education</p>
+                <p style={{ color: 'rgba(255,255,255,0.8)', fontWeight: 600, fontSize: 14, marginBottom: 6 }}>2024 +2 in Computer Science</p>
+                <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: 13 }}>Kathmandu Institute of Science & Technology</p>
+              </div>
             </motion.div>
-
           </div>
 
         </div>
