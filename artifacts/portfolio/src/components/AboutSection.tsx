@@ -23,9 +23,8 @@ function IllustratorIcon() {
 
 function CanvaIcon() {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-      <rect width="32" height="32" rx="6" fill="#00C4CC"/>
-      <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="Arial, sans-serif">Ca</text>
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.1 0C5.61 0 .26 5.17.01 11.66-.27 18.71 5.36 24.57 12.4 24.57c2.91 0 5.57-.99 7.65-2.65l.02-.02c.1-.07.19-.16.27-.25.88-.81.83-2.24-.2-2.91l-.93-.61c-.84-.55-1.91-.38-2.68.25l-.08.06c-1.15.85-2.57 1.37-4.12 1.37-3.87 0-7.01-3.14-7.01-7.01 0-3.86 3.14-7 7-7 1.56 0 2.99.52 4.14 1.39.75.58 1.82.72 2.63.17l.97-.65c1.03-.68 1.1-2.08.23-2.9-.08-.08-.17-.17-.27-.24C18.08 1.05 15.18 0 12.1 0z" fill="#7D2AE8"/>
     </svg>
   );
 }
