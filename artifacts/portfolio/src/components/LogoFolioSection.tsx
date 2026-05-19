@@ -42,7 +42,7 @@ export default function LogoFolioSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="aspect-square bg-[#111] flex items-center justify-center group cursor-pointer hover:bg-[#181818] transition-colors duration-300"
+              className="aspect-square flex items-center justify-center group cursor-pointer"
             >
               <img
                 src={logo.src}
