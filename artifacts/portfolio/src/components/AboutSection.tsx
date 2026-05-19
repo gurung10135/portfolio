@@ -21,10 +21,20 @@ function IllustratorIcon() {
   );
 }
 
+function CanvaIcon() {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <rect width="32" height="32" rx="6" fill="#00C4CC"/>
+      <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="Arial, sans-serif">Ca</text>
+    </svg>
+  );
+}
+
 const SKILLS = [
   { name: "Adobe Photoshop", icon: <PhotoshopIcon />, color: "#31A8FF" },
   { name: "Adobe Illustrator", icon: <IllustratorIcon />, color: "#FF9A00" },
   { name: "Figma", icon: <SiFigma className="text-[#F24E1E]" size={32} />, color: "#F24E1E" },
+  { name: "Canva", icon: <CanvaIcon />, color: "#00C4CC" },
 ];
 const LANGUAGES = ["English — Fluent", "Nepali — Fluent"];
 const INTERESTS = ["Design", "Art & Craft", "Music", "Gaming", "Creative Thinking"];
