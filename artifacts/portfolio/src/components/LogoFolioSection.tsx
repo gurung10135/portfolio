@@ -34,7 +34,7 @@ export default function LogoFolioSection() {
           <div className="w-24 h-1 bg-primary mt-6" />
         </motion.div>
 
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3" style={{ gap: '12px' }}>
           {LOGOS.map((logo, index) => (
             <motion.div
               key={logo.id}
