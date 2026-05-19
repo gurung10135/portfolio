@@ -98,11 +98,11 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="w-[300px] h-[300px]"
+              className="w-[340px] h-[340px]"
             >
               <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors shrink-0">TECHNICAL SKILLS</h3>
+                <CardContent className="p-7 h-full flex flex-col">
+                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-5 group-hover:text-primary transition-colors shrink-0">TECHNICAL SKILLS</h3>
                   <div className="flex flex-col gap-3">
                     {SKILLS.map(skill => (
                       <div key={skill.name} className="flex items-center gap-3">
@@ -120,7 +120,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="w-[300px] h-[300px]"
+              className="w-[340px] h-[340px]"
             >
               <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
                 <CardContent className="p-6 h-full flex flex-col">
@@ -139,7 +139,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="w-[300px] h-[300px]"
+              className="w-[340px] h-[340px]"
             >
               <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
                 <CardContent className="p-6 h-full flex flex-col">
@@ -160,7 +160,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="w-[300px] h-[300px]"
+              className="w-[340px] h-[340px]"
             >
               <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
                 <CardContent className="p-6 h-full flex flex-col">
