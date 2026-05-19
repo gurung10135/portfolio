@@ -55,7 +55,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
-              className="text-sm font-medium text-white/70 hover:text-primary transition-colors tracking-wide"
+              className="text-sm font-medium text-black hover:text-primary transition-colors tracking-wide"
               data-testid={`nav-link-${link.label.toLowerCase().replace(/\s+/g, '-')}`}
             >
               {link.label}
@@ -88,7 +88,7 @@ export default function Navbar() {
                   key={link.label}
                   href={link.href}
                   onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
-                  className="text-lg font-medium text-white/80 hover:text-primary transition-colors"
+                  className="text-lg font-medium text-black hover:text-primary transition-colors"
                   data-testid={`mobile-nav-link-${link.label.toLowerCase().replace(/\s+/g, '-')}`}
                 >
                   {link.label}
