@@ -33,7 +33,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-32 bg-[#0a0a0a] relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 items-start">
           
           {/* Left / Heading area */}
           <div className="lg:col-span-5 flex flex-col items-center text-center">
