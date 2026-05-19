@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import logo1 from "@assets/image_1779126550877.png";
-import logo2 from "@assets/image_1779126557683.png";
+import logo2 from "@assets/New_Project_(8)_1779182296984.png";
 import logo3 from "@assets/image_1779126564503.png";
 import logo4 from "@assets/image_1779126571483.png";
 import logo5 from "@assets/image_1779126576518.png";
