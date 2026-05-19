@@ -100,7 +100,7 @@ export default function AboutSection() {
           </div>
 
           {/* Right / Details area */}
-          <div className="lg:col-span-7 lg:pl-16" style={{ display: 'flex', alignItems: 'flex-start' }}>
+          <div className="lg:col-span-7" style={{ display: 'flex', alignItems: 'flex-start', paddingLeft: '150px' }}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
