@@ -83,6 +83,7 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="space-y-6 text-white/70 text-lg leading-relaxed font-sans"
+              style={{ textAlign: 'justify' }}
             >
               <p>
                 I'm a Nepali designer from Kathmandu city, specialized in graphic design. My passion lies in crafting and enhancing projects that stand out with a distinctive style, ensuring they convey the right message with a genuine and unique personality.
