@@ -34,7 +34,7 @@ export default function LogoFolioSection() {
           <div className="w-24 h-1 bg-primary mt-6" />
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-0">
+        <div className="grid grid-cols-3 gap-8">
           {LOGOS.map((logo, index) => (
             <motion.div
               key={logo.id}
@@ -42,12 +42,12 @@ export default function LogoFolioSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-[#111] overflow-hidden group cursor-pointer aspect-square flex items-center justify-center hover:bg-[#181818] transition-colors duration-300"
+              className="aspect-square bg-[#111] flex items-center justify-center group cursor-pointer hover:bg-[#181818] transition-colors duration-300"
             >
               <img
                 src={logo.src}
                 alt={logo.title}
-                className="w-4/5 h-4/5 object-contain transition-transform duration-500 group-hover:scale-110"
+                className="w-3/4 h-3/4 object-contain transition-transform duration-500 group-hover:scale-110"
               />
             </motion.div>
           ))}
