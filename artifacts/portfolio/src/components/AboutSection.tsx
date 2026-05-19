@@ -98,12 +98,12 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="aspect-square"
+              className="h-[240px]"
             >
-              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full group">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-5 group-hover:text-primary transition-colors">TECHNICAL SKILLS</h3>
-                  <div className="flex flex-col gap-4">
+              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
+                <CardContent className="p-6 h-full flex flex-col overflow-hidden">
+                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors shrink-0">TECHNICAL SKILLS</h3>
+                  <div className="flex flex-col gap-3 overflow-hidden">
                     {SKILLS.map(skill => (
                       <div key={skill.name} className="flex items-center gap-3">
                         <span style={{ color: skill.color }}>{skill.icon}</span>
@@ -120,12 +120,12 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="aspect-square"
+              className="h-[240px]"
             >
-              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full group">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors">LANGUAGES</h3>
-                  <ul className="space-y-2">
+              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
+                <CardContent className="p-6 h-full flex flex-col overflow-hidden">
+                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors shrink-0">LANGUAGES</h3>
+                  <ul className="space-y-2 overflow-hidden">
                     {LANGUAGES.map(lang => (
                       <li key={lang} className="text-white/80">{lang}</li>
                     ))}
@@ -139,12 +139,12 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="aspect-square"
+              className="h-[240px]"
             >
-              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full group">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors">INTERESTS</h3>
-                  <div className="flex flex-wrap gap-2">
+              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
+                <CardContent className="p-6 h-full flex flex-col overflow-hidden">
+                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors shrink-0">INTERESTS</h3>
+                  <div className="flex flex-wrap gap-2 overflow-hidden">
                     {INTERESTS.map(interest => (
                       <span key={interest} className="text-sm bg-white/10 px-3 py-1 text-white/80 rounded-full">
                         {interest}
@@ -160,11 +160,11 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="aspect-square"
+              className="h-[240px]"
             >
-              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full group">
-                <CardContent className="p-6 h-full flex flex-col">
-                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors">EDUCATION</h3>
+              <Card className="bg-white/5 border-white/10 hover:border-primary/50 transition-colors duration-300 rounded-none w-full h-full overflow-hidden group">
+                <CardContent className="p-6 h-full flex flex-col overflow-hidden">
+                  <h3 className="text-[#8b5cf6] font-display font-bold text-lg mb-4 group-hover:text-primary transition-colors shrink-0">EDUCATION</h3>
                   <p className="text-white/80 font-medium">2024 +2 in Computer Science</p>
                   <p className="text-white/60 text-sm mt-1">Kathmandu Institute of Science & Technology</p>
                 </CardContent>
